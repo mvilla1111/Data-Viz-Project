@@ -32,7 +32,7 @@ Sourced from Kaggle, we found that the ‘Bank Customer Churn Prediction’ perf
 
 Included are the following attributes:
 
-1. ## CustomerId: unique identifier for each customer
+1. *CustomerId*: unique identifier for each customer
 2. Surname	The customer's surname or last name
 3. Credit Score	A numerical value representing the customer's credit score
 4. Geography	The country where the customer resides (France, Spain or Germany)
