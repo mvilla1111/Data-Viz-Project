@@ -1,6 +1,6 @@
 
 Original Proposal
-*For this project, my aim is to improve existing business strategies by leveraging customer segmentation data. When translated, this information provides significant value by granting firms a means of optimizing existing strategies or aid in developing new targeted strategies. Identifying critical aspects of consumer preferences will enable firms to precisely tailor their products and services, while maximizing customer engagement. 
+`For this project, my aim is` to improve existing business strategies by leveraging customer segmentation data. When translated, this information provides significant value by granting firms a means of optimizing existing strategies or aid in developing new targeted strategies. Identifying critical aspects of consumer preferences will enable firms to precisely tailor their products and services, while maximizing customer engagement. 
 
 By analyzing demographic attributes, we gain a thorough understanding of consumer behavior. A greater understanding of consumer behaviors will enhance an organization’s ability to target a specific demographic—optimizing marketing campaigns to a target audience.  Better known as behavioral economics, a thorough understanding enables marketing teams to connect the psychological approach of consumer choice to economic models of consumer choice/market activity. 
 
