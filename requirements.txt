@@ -1,13 +1,8 @@
-pandas as pd 
-numpy as np 
-matplotlib.pyplot as plt 
-seaborn as sns
-sklearn.preprocessing import LabelEncoder
-sklearn.utils import resample
-scipy import stats
-sklearn.model_selection import train_test_split
-sklearn.ensemble import RandomForestClassifier
-sklearn.metrics import accuracy_score, classification_report,confusion_matrix 
-streamlit as st
-plotly.graph_objects as go
-plotly.express as px
+pandas
+numpy
+matplotlib
+seaborn 
+scikit-learn
+scipy 
+streamlit
+plotly
