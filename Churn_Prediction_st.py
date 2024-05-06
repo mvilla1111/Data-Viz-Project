@@ -20,12 +20,13 @@ df = pd.read_csv('./Churn_Modelling.csv')
 df_c = df.copy()
 df=df.drop(columns=['RowNumber','CustomerId'])
 df=df.drop_duplicates()
-st.title('Predicting Churn Rate')
-st.dataframe(df,width=1300)
+st.title('Analyzing Churn Rate')
+fig = px.scatter(df, x='Age', y='Balance', color='Exited', title='Age vs Balance Scatter Plot')
+st.plotly_chart(fig, use_container_width=True)
 
 
 ##############################################################################
-import plotly.express as px
+
 
 df1 = df.drop(columns=['Surname'])
 encoder = LabelEncoder()
@@ -135,6 +136,3 @@ fig.update_layout(title_text='Correlation Matrix Heatmap', width=1170, title_fon
 st.plotly_chart(fig, use_container_width=True)
 
 #########
-
-
-
