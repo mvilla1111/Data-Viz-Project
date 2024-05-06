@@ -21,19 +21,41 @@ df_c = df.copy()
 df=df.drop(columns=['RowNumber','CustomerId'])
 df=df.drop_duplicates()
 st.title('Analyzing Churn Rate')
-fig = px.scatter(df, x='Age', y='Balance', color='Exited', title='Age vs Balance Scatter Plot')
-st.plotly_chart(fig, use_container_width=True)
-
-
-##############################################################################
-
-
 df1 = df.drop(columns=['Surname'])
 encoder = LabelEncoder()
 categorical_columns = ['Geography', 'Gender']
 for x in categorical_columns:
         df1[x] = encoder.fit_transform(df1[x])
 
+#############################################################################
+
+
+# Sidebar for user inputs
+
+st.sidebar.header('User Input Features')
+
+# Default selections for selectbox and multiselect
+default_gender = df['Gender'].mode()[0]
+default_geos = df['Geography'].unique().tolist()
+
+selected_gender = st.sidebar.selectbox('Gender', options=df['Gender'].unique(), index=df['Gender'].unique().tolist().index(default_gender))
+selected_geo = st.sidebar.multiselect('Geography', options=df['Geography'].unique(), default=default_geos)
+
+# Filter data based on selections
+filtered_data = df[(df['Gender'] == selected_gender) & (df['Geography'].isin(selected_geo))]
+
+if st.sidebar.checkbox('Show Age vs Balance Scatter Plot', value=True):
+    fig = px.scatter(filtered_data, x='Age', y='Balance', color='Exited', title='Age vs Balance Scatter Plot')
+    st.plotly_chart(fig, use_container_width=True)
+
+##############################################################################
+
+df1 = df.drop(columns=['Surname'])
+encoder = LabelEncoder()
+categorical_columns = ['Geography', 'Gender']
+for x in categorical_columns:
+        df1[x] = encoder.fit_transform(df1[x])
+    
 rf_classifier = RandomForestClassifier(n_estimators=27)
 exited = df1[df1.Exited==1]
 no_exit = df1[df1.Exited == 0]
@@ -46,43 +68,46 @@ rf_classifier.fit(X_train,y_train)
 
 #######
 
+
+
 #######
 
 col1, col2 = st.columns([5,5])
 with col1:
-    feature_importances = pd.DataFrame({
-    'Features': X.columns,
-    'Importance': rf_classifier.feature_importances_
-    }).sort_values(by='Importance', ascending=True)
+    if st.sidebar.checkbox('Show Feature Importance', value=True):
+        feature_importances = pd.DataFrame({
+        'Features': X.columns,
+        'Importance': rf_classifier.feature_importances_
+        }).sort_values(by='Importance', ascending=True)
    
 
-    # Create the chart
-    fig1 = px.bar(feature_importances, x='Importance', y='Features', orientation='h',
-             text='Importance', color='Importance', 
-             color_continuous_scale=px.colors.sequential.Viridis)
-
-    # Customize text labels for visibility
-    fig1.update_traces(texttemplate='%{text:.2f}', textposition='inside', textfont_size=16)
-
-    # Update the layout for better readability
-    fig1.update_layout(
-    title={
-        'text': "Feature Importance Analysis", 
-        'x':.2,
-        'font': dict(
-            family="Arial, sans-serif",  # Font family
-            size=24,  # Increase font size here
-            color="white"  # Font color
-        )
-    },
-    xaxis_title="Importance Score",
-    yaxis_title=None,
-    plot_bgcolor='rgba(0,0,0,0)',  # Set transparent background
-    paper_bgcolor='rgba(0,0,0,0)',
-    font=dict(size=16, color="white"),  # Larger font size for overall readability
-    margin=dict(l=0, r=0, t=40, b=20)  # Adjust margins to fit the layout
-)
-    st.plotly_chart(fig1, use_container_width=True)
+        # Create the chart
+        fig1 = px.bar(feature_importances, x='Importance', y='Features', orientation='h',
+                 text='Importance', color='Importance', 
+                 color_continuous_scale=px.colors.sequential.Viridis)
+    
+        # Customize text labels for visibility
+        fig1.update_traces(texttemplate='%{text:.2f}', textposition='inside', textfont_size=16)
+      
+        # Update the layout for better readability
+        fig1.update_layout(
+        title={
+            'text': "Feature Importance Analysis", 
+            'x':.2,
+            'font': dict(
+                family="Arial, sans-serif",  # Font family
+                size=24,  # Increase font size here
+                color="white"  # Font color
+            )
+        },
+        xaxis_title="Importance Score",
+        yaxis_title=None,
+        plot_bgcolor='rgba(0,0,0,0)',  # Set transparent background
+        paper_bgcolor='rgba(0,0,0,0)',
+        font=dict(size=16, color="white"),  # Larger font size for overall readability
+        margin=dict(l=0, r=0, t=40, b=20)  # Adjust margins to fit the layout
+    )
+        st.plotly_chart(fig1, use_container_width=True)
 
 #########
 
@@ -123,7 +148,7 @@ with col2:
 #############   
 # Calculate the correlation matrix from the updated df1
 corr_matrix = df1.corr()
-    
+
 fig = px.imshow(corr_matrix, 
                 text_auto=True, 
                 aspect="wide",
