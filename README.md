@@ -22,7 +22,7 @@ of bias and heavy correlation to the purchase history variable. Thus, rendering 
 
 Rather than pursue attempts to refine the data/models, we opted to introduce a new data set altogether. So long as it met two requirements. First, it should closely resemble our previous data set in order to preserve the work accomplished to date. Second, the data set must include a predefined churn variable. 
 
-## Scope Change
+#### Scope Change
 Early interpretations of this dataset led to the belief that this information could be utilized to aid in identifying the ‘ideal’ and or ‘underserved’ customer bases. While it may still serve that purpose, a redefined version of the latter question may be appropriate to pursue. Where uncovering patterns tied to churning behavior provides the greatest amount of value. As Identifying the key characteristics will allow us to effectively predict a banking customer’s probability of exiting. 
 
 From a business standpoint, retaining customers is far less expensive than acquiring new ones. Thus, developing a predictive model capable of prematurely identifying this type of customer is the new focus of our team. 
