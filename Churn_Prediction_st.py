@@ -10,6 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report,confusion_matrix 
 import streamlit as st
 import plotly.graph_objects as go
+import plotly.express as px
 
 ##############################################################################
 
