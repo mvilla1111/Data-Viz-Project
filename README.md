@@ -47,9 +47,9 @@ Included are the following attributes:
 13. Exited	Whether the customer has churned (1 = yes, 0 = no)
 
 ## Preprocessing
-o	Replace missing values w/ averages
-o	Remove Customer ID attribute
-o	Remove Surname attribute
-o	Convert nominal to numerical values
+- Replace missing values w/ averages
+- Remove Customer ID attribute
+- Remove Surname attribute
+- Convert nominal to numerical values
 
 
