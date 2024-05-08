@@ -57,7 +57,7 @@ Included in the churn_modelling dataset are the following attributes:
 13. *Exited*:	Whether the customer has churned (1 = yes, 0 = no)
 
 # Visualizations - 
-*Note:* These are charts are interactable when accessed via the [visualization dashboard](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/) 
+*Note:* Interactive charts can be accessed via the [visualization dashboard](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/) 
 
 ## Age vs Balance Scatter Plot
 This chart illustrates the relationship between *age* and account *balance* as it pertains to churn rate. Although *balance* maintains a seemingly random effect, *age* displays a noticeable pattern. Where a concentration of consumers from older age groups is evident. Particularly in the 40-60 age group. As opposed to consumers below 30, where churn is far less likely. 
@@ -66,7 +66,10 @@ This chart illustrates the relationship between *age* and account *balance* as i
 ##
 
 ## Feature Importance Analysis | Churn by Country
+An incredibly informative chart, the feature importance chart shown here displays the attributes most associated with at-risk (of churning]) customers. This chart in particular displays feature importance for the male population. At the top, we see *age* as the single largest influencer of churn probability--consistent with our results thus far. The following features: *NumOfProducts*, *Balance*, and *CreditScore* interchange between male and female, but maintain the same level of importance. *EstimatedSalary* and *Tenure* play a marginal effect, with the remaining attributes holding little to no influence. 
 
+## Churn by Country
+A simple chart, this displays the proportion of churn to non churned cases by country. We see that France and hare a similar portion of churned cases, although France maintains a higher number of non
 <img width="1045" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/47fe4a10-927b-4373-962f-5e4e39b2e006">
 
 
