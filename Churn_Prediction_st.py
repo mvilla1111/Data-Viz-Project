@@ -148,7 +148,7 @@ with col2:
 #############   
 # Calculate the correlation matrix from the updated df1
 corr_matrix = df1.corr()
-
+df['Exited'] = df['Exited'].map({0: 'Non Churned', 1: 'Churned'})
 fig = px.imshow(corr_matrix, 
                 text_auto=True, 
                 aspect="wide",
@@ -188,6 +188,7 @@ def load_data():
 def show_violin_plot():
     df = load_data()
     # This line creates a violin plot
+    df['Exited'] = df['Exited'].map({0: 'Non Churned', 1: 'Churned'})
     fig = px.violin(df, y='Age', x='Exited', color='Exited', 
                     labels={'Exited': 'Churn Status', 'Age': 'Age of Customers'},
                     title='Distribution of Age by Churn Status',
