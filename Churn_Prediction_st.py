@@ -161,3 +161,73 @@ fig.update_layout(title_text='Correlation Matrix Heatmap', width=1170, title_fon
 st.plotly_chart(fig, use_container_width=True)
 
 #########
+
+import plotly.express as px
+
+# Assuming df is your DataFrame and it includes a 'Churn' column where 1 indicates churned
+fig = px.histogram(df, x='Age', color='Exited', barmode='overlay',
+                   histnorm='percent', title='Distribution of Age for Churned and Retained Customers')
+fig.update_layout(bargap=0.1)
+st.plotly_chart(fig, use_container_width=True)
+
+##########
+import streamlit as st
+import plotly.express as px
+import pandas as pd
+
+# Assuming you've already loaded your DataFrame 'df'
+# If your DataFrame is not loaded, uncomment the next line and replace the path
+# df = pd.read_csv('./Churn_Modelling.csv')
+
+def load_data():
+    # Adjust the path if necessary
+    df = pd.read_csv('./Churn_Modelling.csv')
+    df = df.drop(columns=['RowNumber', 'CustomerId', 'Surname'])  # Drop unwanted columns
+    return df
+
+def show_violin_plot():
+    df = load_data()
+    # This line creates a violin plot
+    fig = px.violin(df, y='Age', x='Exited', color='Exited', 
+                    labels={'Exited': 'Churn Status', 'Age': 'Age of Customers'},
+                    title='Distribution of Age by Churn Status',
+                    box=True,  # This adds a box plot inside the violin plot
+                    points="all")  # This displays all points within the violin plot
+
+    # Display the plot in the Streamlit app
+    st.plotly_chart(fig, use_container_width=True)
+
+def main():
+    st.title('Churn Analysis with Violin Plot')
+    show_violin_plot()
+
+if __name__ == '__main__':
+    main()
+
+
+
+###################
+
+
+def prepare_data(df):
+    df['AgeGroup'] = pd.cut(df['Age'], bins=[0, 30, 40, 50, 60, 100], labels=['Under 30', '30-40', '40-50', '50-60', 'Over 60'], right=False)
+    df['Exited'] = df['Exited'].map({0: 'Non Churned', 1: 'Churned'})
+    summary = df.groupby(['Geography', 'Gender', 'AgeGroup', 'Exited']).size().reset_index(name='Count')
+    return summary
+
+def create_tree_map(df):
+    fig = px.treemap(df, path=['Geography', 'Gender', 'AgeGroup', 'Exited'], values='Count',
+                     color='Exited', color_discrete_map={'Churned': 'red', 'Non Churned': 'green'}, 
+                     title='Churn Distribution Across Demographics')
+    return fig
+
+def main():
+    st.title('Detailed Churn Analysis Using Tree Map')
+    df = load_data()
+    prepared_data = prepare_data(df)
+    fig = create_tree_map(prepared_data)
+    st.plotly_chart(fig, use_container_width=True)
+
+if __name__ == '__main__':
+    main()
+
