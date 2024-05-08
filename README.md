@@ -56,7 +56,8 @@ Included in the churn_modelling dataset are the following attributes:
 12. *EstimatedSalary*:	The estimated salary of the customer
 13. *Exited*:	Whether the customer has churned (1 = yes, 0 = no)
 
-# Visualizations - ### *Note:* These are charts are interactable when accessed via the [visualization dashboard](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/) 
+# Visualizations - 
+*Note:* These are charts are interactable when accessed via the [visualization dashboard](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/) 
 
 ## 
 Age vs Balance Scatter Plot
