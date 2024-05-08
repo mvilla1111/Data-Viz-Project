@@ -38,7 +38,7 @@ From a business standpoint, retaining customers is far less expensive than acqui
 The concept is summarized [here](https://arxiv.org/pdf/2303.00960) in a study conducted by International Journal of Computer Science Trends and Technology (IJCST). This journal highlights the importance of integrating new innovative ways of proactively tracking consumer behavior. Additionally, emphasizes the importance of converging technical and business processes in order to seamlessly integrate the two domains. With transparency and interpretability servings as critical aspects of success. As the true value of consumer insights lies in their conversion to actionable decision-making and strategy development.
 
 # Data
-Sourced from Kaggle, we found that the ‘Bank Customer Churn Prediction’ perfectly matched our requirements. The only difference is that the new set focuses on banking customers rather than insurance policy member. The ‘Bank Customer Churn Prediction’ data set contains information on two types on customers—existing and former customers who no longer utilize the bank’s services. 
+Sourced from [Kaggle](https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction), we found that the ‘Bank Customer Churn Prediction’ perfectly matched our requirements. The only difference is that the new set focuses on banking customers rather than insurance policy member. The ‘Bank Customer Churn Prediction’ data set contains information on two types on customers—existing and former customers who no longer utilize the bank’s services. 
 
 Included in the churn_modelling dataset are the following attributes:
 
