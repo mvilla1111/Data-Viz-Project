@@ -1,6 +1,9 @@
 *This repo. serves as a hub for the 'Visualization Application' final project
 assigned in MGT4250B2403 - 'Data Visualization & Storytelling'*
 
+[<img width="313" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/c6bc2755-b499-4182-8fd9-aa0d897245cf">](https://www.elon.edu/)
+
+
 
 The Churn Visualization Dashboard can be found [here](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/ )
 
