@@ -59,8 +59,9 @@ Included in the churn_modelling dataset are the following attributes:
 # Visualizations
 *Note:* These are charts are interactable when accessed via the [visualization dashboard](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/) 
 ### Age vs Balance Scatter Plot
+####This chart illustrates the relationship between *age* and account *balance* as it pertains to churn rate. Although *balance* maintains a seemingly random effect, *age* displays a noticeable pattern. Where a concentration of consumers from older age groups is evident. Particularly in the 40-60 age group. As opposed to consumers below 30, where churn is far less likely. 
 <img width="976" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/b0723274-f29b-4fb7-9b66-3257f97ec895">
-This chart illustrates the relationship between *age* and account *balance* as it pertains to churn rate. Although *balance* maintains a seemingly random effect, *age* displays a noticeable pattern. Where a concentration of consumers from older age groups is evident. Particularly in the 40-60 age group. As opposed to consumers below 30, where churn is far less likely. 
+
 <img width="1045" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/47fe4a10-927b-4373-962f-5e4e39b2e006">
 
 <img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/cdf38830-299d-4b2c-afb5-ff3f390b9f2a">
