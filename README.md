@@ -76,11 +76,18 @@ A simple chart, this displays the proportion of churn to non churned cases by co
 The dense heat here portrays the correlation between sets of variables. The matrix contains a range from -1 to 1. 0 to 1 representing positive indicators of churn and vice versa. -1 to 0 representing contradictions or negative indicators of churn (non churn). To the right we see that our feature importance directly aligns with our correlation matrix and validates the irrelevance of the 'leftover' attributes. 
 <img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/cdf38830-299d-4b2c-afb5-ff3f390b9f2a">
 
+## Distribution of Age
+The following two charts assist in visualizing the distribution between age groups. The divide between consumers over the age of 40 is obvious. With our bell curve peaking around the 50 year mark. The spread of churn cases seemingly limited that age group. Whereas non churn cases appear to encompass the range in its entirety, from 20 to 80 years of age. 
 <img width="1025" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/3a50b85a-9a66-4be9-81cb-43ed5fbb3c56">
 
 <img width="1011" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/f6a4d461-e986-4607-8840-219e51c05e88">
 
+## Tree Map 
+This chart serves as an interactive means of investigating the smaller nuances influencing a particular group or class of individuals. 
 <img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/6893161d-e6ad-4dbf-b703-fddab40afefb">
 
+# Discussion
+The information presented above grants organizations the ability to proactively engage with its consumer base. The capability to efficiently identify the type(s) of consumer at risk of cutting ties with a business is an extremely invaluable tool to have. With a wide range of implications, these insights can affect essentially every facet of the business process. From marketing to accounting, and so on. By leveraging these insights, marketing departments can effectively tailor their efforts toward specific individuals rather than unnecessarily expending resources on blanket campaigns. Moreover, by identifying those most at risk, you inadvertently identify characteristics associated with individuals most likely to be retained.
+Serving as a means of segmenting the consumer base. Aside from customer retention, this allows companies to fine-tune their customer acquisition strategy. Effectively and efficiently directing resources toward an outcome with the highest chance of success. 
 
-
+When consulting with ChatGPT, the AI proposed other ideas that had not occurred to me. A standout being the ability to track consumer performance overtime. As gathering more data aids in monitoring shifts to overall behavior. Identifying trends that mitigating/responding to those changes in real time. Interestingly, ChatGPT and I came to a similar conclusion--leveraging this information grants a competitive edge to those with access to it. Knowing the decisions of a consumer before they themselves know it presents an indescribable amount of possibilities. From marketing strategies to product development and everything in between. 
