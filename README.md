@@ -35,6 +35,8 @@ Early interpretations of this dataset led to the belief that this information co
 
 From a business standpoint, retaining customers is far less expensive than acquiring new ones. Thus, developing a predictive model capable of prematurely identifying this type of customer is the new focus of our team. 
 
+The concept is summarized [here](https://arxiv.org/pdf/2303.00960) in a study conducted by AI and Cognitive Experience, Tata Consultancy Services Ltd. This journal highlights the importance of integrating new innovative ways of proactively tracking consumer behavior. Additionally, emphasizes the importance of converging technical and business processes in order to seamlessly integrate the two domains. With transparency and interpretability servings as critical aspects of success. As the true value of consumer insights lies in their conversion to actionable decisions.
+
 # Data
 Sourced from Kaggle, we found that the ‘Bank Customer Churn Prediction’ perfectly matched our requirements. The only difference is that the new set focuses on banking customers rather than insurance policy member. The ‘Bank Customer Churn Prediction’ data set contains information on two types on customers—existing and former customers who no longer utilize the bank’s services. 
 
