@@ -69,10 +69,11 @@ This chart illustrates the relationship between *age* and account *balance* as i
 An incredibly informative chart, the feature importance chart shown here displays the attributes most associated with at-risk (of churning]) customers. This chart in particular displays feature importance for the male population. At the top, we see *age* as the single largest influencer of churn probability--consistent with our results thus far. The following features: *NumOfProducts*, *Balance*, and *CreditScore* interchange between male and female, but maintain the same level of importance. *EstimatedSalary* and *Tenure* play a marginal effect, with the remaining attributes holding little to no influence. 
 
 ### Churn by Country
-A simple chart, this displays the proportion of churn to non churned cases by country. We see that France and Germany share a similar proportion of churned cases, although France maintains a higher number of non churn consumers. Likely the result of imbalanced sample gathering. Spain appears to have the lowest of churn cases overall. Little can be gathered from this chart aside from a high level overview of the data.s
+A simple chart, this displays the proportion of churn to non churned cases by country. We see that France and Germany share a similar proportion of churned cases, although France maintains a higher number of non churn consumers. Likely the result of imbalanced sample gathering. Spain appears to have the lowest number of churn cases overall. Little can be gathered from this chart aside from a high level overview of the data.
 <img width="1045" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/47fe4a10-927b-4373-962f-5e4e39b2e006">
 
-
+## Correlation Matrix Heatmap
+The dense heat here portrays the correlation between sets of variables. The matrix contains a range from -1 to 1. 0 to 1 representing positive indicators of churn and vice versa. -1 to 0 representing contradictions or negative indicators of churn (non churn). To the right we see that our feature importance directly aligns with our correlation matrix and validates the irrelevance of the 'leftover' attributes. 
 <img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/cdf38830-299d-4b2c-afb5-ff3f390b9f2a">
 
 <img width="1025" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/3a50b85a-9a66-4be9-81cb-43ed5fbb3c56">
