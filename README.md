@@ -68,7 +68,7 @@ This chart illustrates the relationship between *age* and account *balance* as i
 ## Feature Importance Analysis | Churn by Country
 An incredibly informative chart, the feature importance chart shown here displays the attributes most associated with at-risk (of churning]) customers. This chart in particular displays feature importance for the male population. At the top, we see *age* as the single largest influencer of churn probability--consistent with our results thus far. The following features: *NumOfProducts*, *Balance*, and *CreditScore* interchange between male and female, but maintain the same level of importance. *EstimatedSalary* and *Tenure* play a marginal effect, with the remaining attributes holding little to no influence. 
 
-## Churn by Country
+### Churn by Country
 A simple chart, this displays the proportion of churn to non churned cases by country. We see that France and Germany share a similar proportion of churned cases, although France maintains a higher number of non churn consumers. Likely the result of imbalanced sample gathering. Spain appears to have the lowest of churn cases overall. Little can be gathered from this chart aside from a high level overview of the data.s
 <img width="1045" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/47fe4a10-927b-4373-962f-5e4e39b2e006">
 
