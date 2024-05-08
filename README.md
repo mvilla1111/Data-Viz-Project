@@ -1,4 +1,4 @@
-The Dashboard can be found here > https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/ 
+The Churn Visualization Dashboard can be found [here](https://data-viz-project-cnbxhynmgeszujvn53t2vx.streamlit.app/ )
 # Original Proposal:
 For this project, my aim was to improve existing business strategies by leveraging customer segmentation data. When translated, this information provides significant value by granting firms a means of optimizing existing strategies or aid in developing new targeted strategies. Identifying critical aspects of consumer preferences will enable firms to precisely tailor their products and services, while maximizing customer engagement.
 
