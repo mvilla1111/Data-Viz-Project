@@ -58,4 +58,17 @@ Included in the churn_modelling dataset are the following attributes:
 
 # Visualizations
 
+<img width="976" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/b0723274-f29b-4fb7-9b66-3257f97ec895">
+
+<img width="1045" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/47fe4a10-927b-4373-962f-5e4e39b2e006">
+
+<img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/cdf38830-299d-4b2c-afb5-ff3f390b9f2a">
+
+<img width="1025" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/3a50b85a-9a66-4be9-81cb-43ed5fbb3c56">
+
+<img width="1011" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/f6a4d461-e986-4607-8840-219e51c05e88">
+
+<img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/6893161d-e6ad-4dbf-b703-fddab40afefb">
+
+
 
