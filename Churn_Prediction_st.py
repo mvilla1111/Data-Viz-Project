@@ -199,7 +199,6 @@ def show_violin_plot():
     st.plotly_chart(fig, use_container_width=True)
 
 def main():
-    st.title('Churn Analysis with Violin Plot')
     show_violin_plot()
 
 if __name__ == '__main__':
