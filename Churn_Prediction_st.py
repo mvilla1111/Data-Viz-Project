@@ -32,14 +32,10 @@ for x in categorical_columns:
 
 # Sidebar for user inputs
 
-st.sidebar.header('User Input Features')
+
 
 # Default selections for selectbox and multiselect
-default_gender = df['Gender'].mode()[0]
-default_geos = df['Geography'].unique().tolist()
 
-selected_gender = st.sidebar.selectbox('Gender', options=df['Gender'].unique(), index=df['Gender'].unique().tolist().index(default_gender))
-selected_geo = st.sidebar.multiselect('Geography', options=df['Geography'].unique(), default=default_geos)
 
 # Filter data based on selections
 filtered_data = df[(df['Gender'] == selected_gender) & (df['Geography'].isin(selected_geo))]
