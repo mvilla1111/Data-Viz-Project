@@ -35,12 +35,12 @@ Early interpretations of this dataset led to the belief that this information co
 
 From a business standpoint, retaining customers is far less expensive than acquiring new ones. Thus, developing a predictive model capable of prematurely identifying this type of customer is the new focus of our team. 
 
-The concept is summarized [here](https://arxiv.org/pdf/2303.00960) in a study conducted by AI and Cognitive Experience, Tata Consultancy Services Ltd. This journal highlights the importance of integrating new innovative ways of proactively tracking consumer behavior. Additionally, emphasizes the importance of converging technical and business processes in order to seamlessly integrate the two domains. With transparency and interpretability servings as critical aspects of success. As the true value of consumer insights lies in their conversion to actionable decision-making and strategy development.
+The concept is summarized [here](https://arxiv.org/pdf/2303.00960) in a study conducted by International Journal of Computer Science Trends and Technology (IJCST). This journal highlights the importance of integrating new innovative ways of proactively tracking consumer behavior. Additionally, emphasizes the importance of converging technical and business processes in order to seamlessly integrate the two domains. With transparency and interpretability servings as critical aspects of success. As the true value of consumer insights lies in their conversion to actionable decision-making and strategy development.
 
 # Data
 Sourced from Kaggle, we found that the ‘Bank Customer Churn Prediction’ perfectly matched our requirements. The only difference is that the new set focuses on banking customers rather than insurance policy member. The ‘Bank Customer Churn Prediction’ data set contains information on two types on customers—existing and former customers who no longer utilize the bank’s services. 
 
-Included are the following attributes:
+Included in the churn_modelling dataset are the following attributes:
 
 1. *CustomerId*: unique identifier for each customer
 2. *Surname*:	The customer's surname or last name
@@ -56,10 +56,6 @@ Included are the following attributes:
 12. *EstimatedSalary*:	The estimated salary of the customer
 13. *Exited*:	Whether the customer has churned (1 = yes, 0 = no)
 
-## Preprocessing
-- Replace missing values w/ averages
-- Remove Customer ID attribute
-- Remove Surname attribute
-- Convert nominal to numerical values
+# Visualizations
 
 
