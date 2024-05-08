@@ -67,7 +67,7 @@ This chart illustrates the relationship between *age* and account *balance* as i
 ### Feature Importance Analysis | Churn by Country
 
 <img width="1045" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/47fe4a10-927b-4373-962f-5e4e39b2e006">
-##
+
 
 <img width="1031" alt="image" src="https://github.com/mvilla1111/Data-Viz-Project/assets/168783485/cdf38830-299d-4b2c-afb5-ff3f390b9f2a">
 
